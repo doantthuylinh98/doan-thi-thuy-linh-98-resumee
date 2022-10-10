@@ -170,37 +170,3 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
-
-/*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 1500,
-  reset: true,
-});
-
-sr.reveal(
-  `       .home__social, 
-          .home__img, 
-          .home__title,
-          .home__subtitle,
-          .home__description,
-          .home__button,
-          .section__title,
-          .section__subtitle,
-          .about__data, 
-          .about__img,
-          .about__button,
-          .skills__content,
-          .qualification__tabs, 
-          .qualification__container, 
-          .workdetails__container,
-          .portfolio__container, .app__img,
-          .contact__info, .contact__content, .contact__button,
-          .footer__content, 
-          .footer__links, 
-          .footer__socials`,
-  {
-    interval: 200,
-  }
-);
