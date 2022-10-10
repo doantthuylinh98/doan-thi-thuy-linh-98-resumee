@@ -68,7 +68,7 @@
                 Qualification
               </a>
             </li>
-            
+
             <li class="nav__item">
               <a href="#portfolio" class="nav__link">
                 <i class="uil uil-scenery nav__icon"></i>
@@ -180,8 +180,8 @@
 
               </p>
 
-              <a href="#contact" class="button button--flex home__button">
-                Contact me <i class="uil uil-message button__icon"></i>
+              <a href="http://m.me/doantthuylinh98" target="_blank" class="button button--flex home__button">
+                Message me <i class="uil uil-facebook-messenger-alt button__icon"></i>
               </a>
             </div>
           </div>
@@ -801,7 +801,7 @@
       <!-- ================================================ -->
       <!-- ================== CONTACT ===================== -->
       <!-- ================================================ -->
-      <section class="contact section" id="contact">
+      <section class="contact section" id="contact" style="display: none;">
         <h2 class="section__title">Contact</h2>
         <span class="section__subtitle">Personal contact information</span>
 
@@ -831,10 +831,11 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form grid">
+          <form action="" class="contact__form grid" id="contact__form">
+            <input type="hidden" name="contact_number">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
+                <label class="contact__label" type="text" name="user_name">Email</label>
                 <input
                   type="text"
                   class="contact__input"
@@ -843,7 +844,7 @@
               </div>
 
               <div class="contact__content">
-                <label for="" class="contact__label">Subject</label>
+                <label class="contact__label" type="text" name="user_subject">Subject</label>
                 <input
                   type="text"
                   class="contact__input"
@@ -855,8 +856,8 @@
             <div class="contact__content">
               <label for="" class="contact__label">Message</label>
               <textarea
-                name=""
-                id=""
+                name="message"
+                
                 cols="0"
                 rows="10"
                 class="contact__input"
@@ -865,7 +866,8 @@
             </div>
             <div>
               <a href="#" class="button button--flex contact__button"
-                >Send Message
+                >
+                <input type="submit" value="Send">
                 <i class="uil uil-message button__icon"></i>
               </a>
             </div>
@@ -940,6 +942,7 @@
     </script>
     <!--=================== SCROLL REVEAL ===================-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    
     <!-- ================== JS ===================== -->
     <script src="./assets/js/main.js"></script>
   </body>
